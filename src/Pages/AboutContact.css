@@ -1,0 +1,234 @@
+.about-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1518378188025-22bd89516ee2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvZ3N8ZW58MHx8MHx8fDA%3D'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Adjust brightness for overlay effect */
+    z-index: -1; /* Ensure the background image is behind the content */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure content is above background */
+    padding: 50px;
+    text-align: center;
+    color:#fff;
+
+    max-width: 1000px; /* Set a maximum width */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  .content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .mission-section,
+  .what-we-do-section,
+  .why-choose-us-section,
+  .get-involved-section {
+    margin-bottom: 50px;
+  }
+  .mission-section h2{
+    color:black;
+  }
+
+  .what-we-do-section h2{
+    color:black;
+  }
+  .why-choose-us-section h2{
+    color:black;
+  }
+  .get-involved-section h2{
+    color:black;
+  }
+  .mission-section h2,
+  .what-we-do-section h2,
+  .why-choose-us-section h2,
+  .get-involved-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .mission-section p,
+  .what-we-do-section ul,
+  .get-involved-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    text-align: center;
+  }
+  
+  .what-we-do-section ul,
+  .why-choose-us-section ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  .what-we-do-section ul li,
+  .why-choose-us-section ul li {
+    margin-bottom: 10px;
+  }
+  .get-involved-section p {
+    font-style: italic;
+  }
+  
+  /* Media query for responsiveness */
+  @media (max-width: 768px) {
+    .content {
+      padding: 30px;
+    }
+  }
+
+  .team-section {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .team-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .team-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    height: 10px;
+  }
+  
+  .social-icons a {
+    color: #555;
+    text-decoration:overline;
+  }
+  
+  
+  /* ContactUs */
+  /* Contact.css */
+  
+  .contact-page {
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .main-header {
+    font-size: 40px;
+    margin-bottom:6px;
+    font-weight: bold;
+  margin-top: 30px;
+  color:#FF0000;
+    text-align: center;
+   
+  }
+  
+  .contact-form {
+    /* Adjust the bottom margin to reduce space */
+    width: 600px;
+    height: 700px;
+  margin-top: 45px;
+    padding: 20px;
+  }
+  .location{
+    font-size: 20px;
+    margin-left: 30px;
+   
+  }
+  .header-contact {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+  }
+  form {
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .background2 {
+    display: flex;
+    
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://plus.unsplash.com/premium_photo-1661963919820-d201e373bb12?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGRvZyUyMHdpdGglMjB3b21lbnxlbnwwfHwwfHx8MA%3D%3D'); /* Replace 'your-background-image-url.jpg' with your actual image URL */
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  input,
+  textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    height:30px;
+    border:none;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  input:hover,
+  textarea:hover {
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  button {
+    padding: 10px;
+    width:140px;
+  height:48px;
+  
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+  
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color:#FF0000;
+  }
+  
